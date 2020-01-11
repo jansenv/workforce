@@ -11,10 +11,10 @@ const contentTarget = document.querySelector(".employees");
 export const EmployeeList = () => {
   const employees = useEmployees();
   const computers = useComputers();
-  const departments = useDepartments()
-  const locations = useLocations()
-  const customers = useCustomers()
-  const empCust = useEmployeeCustomers()
+  const departments = useDepartments();
+  const locations = useLocations();
+  const customers = useCustomers();
+  const empCust = useEmployeeCustomers();
 
   const render = () => {
     contentTarget.innerHTML = employees.map(employee => {
